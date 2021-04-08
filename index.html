@@ -1,0 +1,123 @@
+<style>
+    body {
+	    background: linear-gradient(-45deg, #000000, #242b70);
+	    background-size: 400% 400%;
+	    animation: gradient 15s ease infinite;
+    }
+    h1 {
+        color: #fff;
+    }
+    h3 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+    a {
+        color: rgb(150, 150, 150);
+    }
+    img {
+        display: inline-block;
+        width: 15px;
+        vertical-align: middle;
+    }
+    button {
+        transition-duration: 0.2s;
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        background-color: #242b70;
+        border: 0.5px solid #242b70;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #374092;
+        box-shadow: 0 10px 20px rgb(25, 25, 25);
+    }
+    .text {
+        opacity: 0.75;
+        box-shadow: inset 5 5px 0 rgb(255, 255, 255);
+	    backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    .content {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .parent {
+        white-space: nowrap;
+    }
+    .external {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .hidden {
+        opacity: 0;
+    }
+    .anim {
+        transition: 0.5s;
+    }
+    @keyframes gradient {
+	    0% {
+		    background-position: 0% 50%;
+	    }
+	    50% {
+		    background-position: 100% 50%;
+	    }
+	    100% {
+	    	background-position: 0% 50%;
+	    }
+    }
+</style>
+<head>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button type="button" onClick="hide()">more</button>
+    <div id="main" class="text content anim">
+        <h1 style="font-family: 'Space Mono'; font-weight: 700;">evelyn's site</h1>
+        <div class="parent">
+            <img src="./GitHub-Mark-Light-32px.png">
+            <a href="https://github.com/althiometer" style="font-family: 'Space Mono'; font-weight: 400;">github</a>
+            <a> - </a>
+            <img src="./2021 Twitter logo - white.png">
+            <a href="https://twitter.com/a1thio" style="font-family: 'Space Mono'; font-weight: 400;">twitter</a>
+        </div>
+    </div>
+    <div id="other" style="opacity: 0;" class="external anim" >
+        <h3 style="font-family: -apple-system, Helveltica; font-weight: 700; font-size: 20px;">
+            What I do: 
+        </h3>
+        <p style="font-family: -apple-system, Helveltica; font-weight: 400;">
+            Swift and Objective-C development <br></br>
+            iOS Runtime Modifications <br></br>
+            Web development
+        </p>
+        <h3 style="font-family: -apple-system, Helveltica; font-weight: 700; font-size: 20px;">
+            What I like: 
+        </h3>
+        <p style="font-family: -apple-system, Helveltica; font-weight: 400;">
+            Developing apps for Apple platforms <br></br>
+            Reverse engineering programs <br></br>
+            Tinkering with hardware 
+        </p>
+        <h3 style="font-family: -apple-system, Helveltica; font-weight: 700; font-size: 20px;">
+            Experience:
+        </h3>
+        <p style="font-family: -apple-system, Helveltica; font-weight: 400;">
+            Web development with <b>React</b> and <b>TypeScript</b> <br></br>
+            Creation of beautiful UI/UX experiences with <b>SwiftUI</b> <br></br>
+            Use and creation of <b>web APIs</b> <br></br>
+        </p>
+    </div>
+</body>
