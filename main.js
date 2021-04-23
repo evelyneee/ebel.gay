@@ -9,5 +9,4 @@ function hide() {
         document.getElementById("main").style.display = "block";
         status = 0;
     }
-    console.log(status);
 }
